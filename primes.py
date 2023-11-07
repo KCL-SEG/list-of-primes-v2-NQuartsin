@@ -13,8 +13,8 @@ def primes(number_of_primes):
         isPrime = True
         for j in range (2,i): # where j is a possible factor of i
             if (i % j == 0):
-                prime = False
-        if (prime == True):
+                isPrime = False
+        if (isPrime == True):
             list.append(i)
         i = i + 1
     return list
